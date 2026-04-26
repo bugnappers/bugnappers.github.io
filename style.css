@@ -1,3 +1,4 @@
+
 *,
 *::before,
 *::after {
@@ -7,17 +8,17 @@
 }
 
 :root {
-  --bg:         #fff4e0;  
-  --cream:      #fff4e0;  
-  --dark:       #111111; 
+  --bg:         #fff4e0;
+  --cream:      #fff4e0;
+  --dark:       #111111;
   --text:       #111111;
   --text-muted: #3a3836;
 
-  --blue:      #5bb5ff; 
-  --blue-dark: #3985c4;  
-  --mint:       #74bae2; 
-  --peach:      #ffc671;  
-  --about-bg:   #f5b56a; 
+  --blue:      #5bb5ff;
+  --blue-dark: #3985c4;
+  --mint:       #74bae2;
+  --peach:      #ffc671;
+  --about-bg:   #f5b56a;
   --yellow:     #ffd86b;
 
   --mint-bg:    #111111;
@@ -237,6 +238,8 @@ ul { list-style: none; }
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   font-family: var(--font);
   font-weight: 900;
   font-size: 1rem;
@@ -245,6 +248,8 @@ ul { list-style: none; }
   border: 3px solid transparent;
   cursor: pointer;
   transition: all var(--transition);
+  max-width: 100%;
+  word-break: break-word;
 }
 .btn:hover { transform: translateY(-3px); }
 
@@ -582,6 +587,9 @@ ul { list-style: none; }
 .contact {
   text-align: center;
   max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact__sub {
   font-weight: 700;
@@ -681,8 +689,14 @@ ul { list-style: none; }
     margin: 0 auto;
   }
   .team__grid {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
+  }
+  .team__card {
+    flex: 0 0 calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
   }
   .next__grid {
     grid-template-columns: 1fr;
@@ -698,6 +712,10 @@ ul { list-style: none; }
   }
   .section { padding: 72px 0; }
   .hero__doodles { display: none; }
+  .btn--lg {
+    font-size: .95rem;
+    padding: 14px 24px;
+  }
   .footer__inner {
     flex-direction: column;
     gap: 8px;
