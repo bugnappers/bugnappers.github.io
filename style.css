@@ -769,6 +769,7 @@ kbd {
 .ant--peek { z-index: 0; top: 40px; right: -78px; width: 150px; rotate: 14deg; }
 .ant--peek img { transform: scaleX(-1); }
 .photo img.ant--walk { bottom: -26px; right: -46px; width: 104px; rotate: 4deg; z-index: 2; }
+.photo img.ant--snail { width: 128px; bottom: -30px; right: -58px; rotate: 0deg; filter: drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(0 4px 2px rgba(58, 32, 20, .2)); }
 .photos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -943,6 +944,7 @@ kbd {
   .photo img.ant--corner { width: 80px; left: -12px; top: -36px; }
   .ant--peek { display: none; }
   .photo img.ant--walk { width: 80px; right: -12px; bottom: -30px; }
+  .photo img.ant--snail { width: 96px; right: -10px; bottom: -28px; }
   .hero__actions { margin-top: 24px; }
   .btn { font-size: 1.15rem; }
 
